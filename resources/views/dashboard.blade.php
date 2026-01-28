@@ -205,13 +205,6 @@
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <span class="text-sm font-bold text-purple-600 mr-2">{{ $book->borrow_records_count }}</span>
-                                    <!-- <div class="w-24 bg-slate-200 rounded-full h-2">
-                                        @php
-                                        $maxCount = max(1, $bukuPopuler->max('borrow_records_count'));
-                                        $percentage = ($book->borrow_records_count / $maxCount) * 100;
-                                        @endphp
-                                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" style="width: {{ $percentage }}%"></div>
-                                    </div> -->
                                 </div>
                             </td>
                         </tr>

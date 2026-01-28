@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class BorrowRecord extends Model
 {
-    protected $fillable = ['member_id', 'book_id', 'borrow_date', 'due_date', 'return_date', 'status'];
+    protected $fillable = [
+        'member_id',
+        'book_id',
+        'borrow_date',
+        'due_date',
+        'return_date',
+        'status'
+    ];
 
     public function member(): BelongsTo
     {
